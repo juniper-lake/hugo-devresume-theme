@@ -5,7 +5,7 @@
 
                                 {{ range .Site.Params.skills.list }}
                                 <div class="item">
-                                    <h4 class="item-title">{{ .title }}</h4>
+                                    <h4 class="item-title mt-2">{{ .title }}</h4>
                                     <ul class="list-unstyled resume-skills-list">
                                         {{ range .items }}
                                         <li class="mb-2">{{ with .details }}{{ . | markdownify }}{{ end }}</li>

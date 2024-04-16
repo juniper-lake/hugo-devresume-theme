@@ -33,6 +33,7 @@ $theme-colors: (
   "secondary":  $theme-text-color-secondary,
 );
 
+
 /*************************** Import Bootstrap  *****************************/
 @import "bootstrap/scss/bootstrap.scss";
 
@@ -138,9 +139,8 @@ a.resume-link {
 	max-width: 120px;
 }
 
-.resume-intro {
-	font-size: 0.875rem;
-}
+
+
 .resume-main {
 	.item-title {
 		font-size: 1rem;
@@ -188,25 +188,30 @@ a.resume-link {
 	color: #fb866a;
 }
 
+
+.resume-intro {
+	font-size: 0.875rem;
+}
+
+
 // Medium devices (tablets, less than 992px)
 @media (max-width: 991.98px) {
 
-    .resume-aside {
-	    border-left: 0;
-    }
+		.resume-aside {
+			border-left: 0;
+		}
 }
-
 
 // Small devices (landscape phones, less than 768px)
 @media (max-width: 767.98px) {
 	.resume-contact {
-	    border-left: 0;
-    }
+			border-left: 0;
+		}
 }
 
 
 
 
+// this is imported as part of bootstrap.scss but importing again at the bottom prevent overriding of print values with default values
 
-
-
+// @import "bootstrap/scss/_print.scss";
